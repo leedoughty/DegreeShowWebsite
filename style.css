@@ -1,0 +1,38 @@
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+/* .top {
+  margin-top: 0px;
+  height: 70px;
+  left: 0;
+  border: red;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+} */
+
+/* .info {
+  font-weight: 200;
+  font-family: "Futura", serif;
+} */
+
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding-top: 15%;
+  font-family: "Futura", serif;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  padding-top: 12%;
+  font-family: "Futura", serif;
+}
