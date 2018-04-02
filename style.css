@@ -3,36 +3,163 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #E5E5E5;
+  background-color: #f4763e;
+  font-family: "Futura", sans-serif;
 }
 
-/* .top {
-  margin-top: 0px;
-  height: 70px;
-  left: 0;
-  border: red;
-  position: absolute;
+body {
   height: 100%;
   width: 100%;
-} */
-
-/* .info {
-  font-weight: 200;
-  font-family: "Futura", serif;
-} */
-
-
-h1 {
-  text-align: center;
-  font-size: 6rem;
-  padding-top: 15%;
-  font-family: "Futura", serif;
 }
 
-h2 {
+a {
+  color: white;
+}
+
+a:hover {
+  color: black;
+}
+
+p {
+  color: white;
+  font-size: 3em;
   text-align: center;
-  font-weight: 200;
-  font-size: 1rem;
-  padding-top: 12%;
-  font-family: "Futura", serif;
+  padding-top: 20px;
+}
+
+#titleContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  /* horizontal */
+  justify-content: center;
+  /* vertical */
+  align-items: center;
+}
+
+#oo {
+  position: relative;
+}
+
+#ootext {
+  position: relative;
+}
+
+.ooimage {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+#title {
+  white-space: nowrap;
+  font-size: 108px;
+  font-weight: 600;
+  color: #ffffff;
+  /* giving more vertical space */
+  line-height: 2em;
+}
+
+.titletext {
+  z-index: 100;
+}
+
+#title div {
+  float:left;
+  display:inline-block;
+}
+
+#info {
+    position: relative;
+    padding-bottom: 680px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+#info div {
+    position:absolute;
+    margin:0;
+    padding: 10px;
+}
+#info div:nth-child(1) {
+    top:0;
+    left:0;
+    z-index: 3;
+}
+#info div:nth-child(2) {
+    top:0;
+    right:0;
+    z-index: 3;
+}
+#info div:nth-child(3) {
+    bottom:0;
+    left:0;
+    z-index: 3;
+}
+#info div:nth-child(4) {
+    bottom:0;
+    right:0;
+    z-index: 3;
+    text-align: right;
+}
+#info div:nth-child(5) {
+    top: 35%;
+    left: 23.5%;
+    font-size: 108px;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.link-centered {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.grid {
+  max-width: 90%;
+  margin: 0 auto;
+  border: 1px solid papayawhip;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+   margin: 0;
+   overflow: hidden;
+}
+
+.grid-image {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  .grid-image {
+    max-width: 150px;
+  }
 }
