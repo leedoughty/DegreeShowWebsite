@@ -1,46 +1,167 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>In Cahoots</title>
+    <title>IN CAHOOTS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <!-- p5 library used to create interactive mouse brush -->
-    <script src="p5/p5.min.js"></script>
+  </head>
+  <body onload="init()">
+    <script src="scroll-to.js"></script>
+    <!-- <script src="p5/p5.min.js"></script>
     <script src="p5/addons/p5.dom.min.js"></script>
     <script src="p5/addons/p5.sound.min.js"></script>
     <script src="p5/empty-example/sketch.js"></script>
-    <!-- p5 gif library used to bring in brush animation -->
-    <script src="../../libraries/p5.gif.js"></script>
-  </head>
-  <body onload="init()">
-    <div id="titleContainer">
-      <div id="title">
-        <div class="titletext">IN CAH</div>
-        <div id="oo">
-          <div id="ootext">OO</div>
-          <!-- <img id="ooimage" class="hidden" src="images/1.jpg"> -->
-          <img class="ooimage" class="hidden" src="images/7.png">
-          <img class="ooimage" class="hidden" src="images/5.png">
-          <img class="ooimage" class="hidden" src="images/9.png">
-          <img class="ooimage" class="hidden" src="images/11.png">
+    <script src="/libraries/p5.gif.js"></script>
+    <script src="modernizr-touch.js"></script>
+    <script>function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }  </script> -->
+    <div id="front-p" class="section front">
+      <div class="top-co">
+        <div class="corner top left">14TH - 18TH June 2[18</div>
+        <div class="corner top right"><a class="googlemap" target="_blank" href="https://www.google.co.uk/maps/place/The+Old+Truman+Brewery/@51.5209735,-0.0746925,17z/data=!3m1!4b1!4m5!3m4!1s0x48761cb681c09d1b:0xffb3966176941f91!8m2!3d51.5209735!4d-0.0725038">
+          The }ld Truman Brewery, L{nd]n, E1 6QL
+        </a></div>
+      </div>
+      <div class="brand">IN CAH$~TS<div class="brand">
+        <!-- <img class="ooimage" class="hidden" src="image/7.png">
+        <img class="ooimage" class="hidden" src="image/5.png">
+        <img class="ooimage" class="hidden" src="image/9.png">
+        <img class="ooimage" class="hidden" src="image/11.png"> -->
+      <!-- <p class="oochange" class="hidden">OO</p> -->
+      </div>
 
+        <div id="front-mid-text" class="corner tablet-text">BRIGHT|N GRAPHIC DESIGN &<br> ILLUSTRATI{N GRADUATE SH&lt;W
         </div>
-        <div class="titletext">TS</div>
+        <div id="front-mid-text" class="corner laptop-text">BRIGHT|N GRAPHIC DESIGN & ILLUSTRATI{N GRADUATE SH&lt;W
+        </div>
+      </div>
+      <div class="btm-co">
+        <div class="corner phone-text">BRIGHT|N GRAPHIC DESIGN &<br> ILLUSTRATI{N GRADUATE SH&lt;W
+        </div>
       </div>
     </div>
-    <div id="info">
-      <div>UNIVERSITY OF BRIGHTON<br>GRAPHIC DESIGN AND ILLUSTRATION</div>
-      <div>DEGREE SHOW</div>
-      <div>The Old Truman Brewery, 91 Brick Lane,<br>London E1 6QL</div>
-      <div>Private View: 14 June<br>15-17 June</div>
-      <div id="colour-bk"></div>
     </div>
-        <div id="second">incahoots@gmail.com</div>
-    <!-- p5 sketch is placed into this container -->
+    <img class="screenprint1" src="screenprint.png">
+    <img class="screenprint2" src="screenprint2.png">
+    <img class="screenprint3" src="screenprint3.png">
+    <img class="screenprint4" src="screenprint4.png">
+    <div id="about" class="section about">
+      <div class="brand-about">ABOUT</div>
+      <div class="about-info phone-text"><p>Introducing <span class="brand-in-text">IN CAHOOTS</span>, the 2018 Graduates of Graphic Design and Illustration at the University of Brighton.</p>
+        <p>As our degree show name suggests,<br> <span class="brand-in-text">IN CAHOOTS</span> describes how we interact with each other as a collective course;<br> we play,
+        conspire, create, push, pull<br> and challenge the ever-changing boundaries of Graphic Design and Illustration.
+        Our practises may range from building paper cities to computer generated landscapes, detailed oil paintings to documentary photography across countries.
+         A haven of creativity buzzes beneath the ceiling of our studio 350, chaos and tranquillity somehow coexist comfortably in our space.</p>
+         <p>Our show aims to explore our<br> strengths as a collective as well as our unapologetic individualism.
+         It explores how strong we can be when we bundle together, with the fusion of 150 different minds, backgrounds and practises,
+         <br>in a show under one roof at the<br> Truman Brewery.</p>
+         <p>Be <span class="brand-in-text">IN CAHOOTS</span> with us.</p>
+      </div>
+      <div class="about-info tablet-text"><p>Introducing <span class="brand-in-text">IN CAHOOTS</span>, the 2018 Graduates of<br> Graphic Design and Illustration at the University of Brighton.</p><br>
+        <p>As our degree show name suggests, <span class="brand-in-text">IN CAHOOTS</span> describes<br> how
+         we interact with each other as a collective course; we play,<br>
+        conspire, create, push, pull and challenge the ever-changing<br> boundaries of Graphic Design and Illustration.
+        Our practises<br> may range from building paper cities to computer generated<br> landscapes, detailed oil paintings to documentary photography<br> across countries.
+         A haven of creativity buzzes beneath the<br> ceiling of our studio 350, chaos and tranquillity somehow<br> coexist comfortably in our space.</p>
+         <p>Our show aims to explore our strengths as a collective as well as our unapologetic individualism.
+         It explores how strong we can be<br> when we bundle together, with the fusion of 150 different minds, backgrounds and practises,
+         in a show under one roof at the<br> Truman Brewery.</p>
+         <p><br>Be <span class="brand-in-text">IN CAHOOTS</span> with us.</p>
+      </div>
+      <div class="about-info laptop-text"><p>Introducing <span class="brand-in-text">IN CAHOOTS</span>, the 2018 Graduates of Graphic Design<br> and Illustration at the University of Brighton.</p><br>
+        <p>As our degree show name suggests, <span class="brand-in-text">IN CAHOOTS</span> describes<br> how
+         we interact with each other as a collective course; we play,<br>
+        conspire, create, push, pull and challenge the ever-changing<br> boundaries of Graphic Design and Illustration.
+        Our practises may<br> range from building paper cities to computer generated landscapes,<br> detailed oil paintings to documentary photography across countries.<br>
+         A haven of creativity buzzes beneath the ceiling of our studio 350,<br> chaos and tranquillity somehow coexist comfortably in our space.</p>
+         <p>Our show aims to explore our strengths as a collective as well as<br> our unapologetic individualism.
+         It explores how strong we can be<br> when we bundle together, with the fusion of 150 different minds,<br> backgrounds and practises,
+         in a show under one roof at the<br> Truman Brewery.</p>
+         <p><br>Be <span class="brand-in-text">IN CAHOOTS</span> with us.</p>
+      </div>
+    </div>
+    <!-- <div id="donate" class="section promote">
+      <div class="brand-pro">DONATE</div>
+      <div class="promote-sec">
+        <div class="videoWrapper"><iframe class="vimeo" src="https://player.vimeo.com/video/59777392" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="promote-lk">
+          <a target="_blank" class="vimeo-lk" href="https://vimeo.com">Vimeo</a>
+        </div>
+      </div>
+    </div> -->
+    <div id="work" class="section work">
+      <div class="brand-work">WORK</div>
+      <div class="work-sec">
+        <div class="grid-container" align="center">
+          <div class="container">
+            <img src="image/work-image2.jpg"  class="image">
+            <div class="top-lay">
+            </div>
+            <a class="overlay overlay-ill" href="illustration-work.html">
+              <div class="text text-ill">ILLUSTRATION
+              </div>
+            </a>
+          </div>
+          <div class="container">
+            <img src="image/work-image.jpg"  class="image">
+            <div class="top-lay">
+              <a href="illustration-work.html"></a>
+            </div>
+            <a class="overlay overlay-gd" href="graphic-work.html">
+              <div class="text text-gd">GRAPHIC DESIGN
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="info" class="section info">
+      <div class="brand-info">INFO
+      </div>
+      <div class="info-sec">
+        <div class="detail-box detail-contact">
+          <div class="detail-heading">CONTACT:</div><br>
+          <div class="gmail">
+            <a class="mail" href="mailto:incahootsbrighton@gmail.com">incahootsbrighton@gmail.com</a>
+          </div>
+          <div class="insta">
+            <a target="_blank" class="instagram" target="_blank" href="https://www.instagram.com/incahootsbrighton/">
+            <img src="instagram-logoblack.png" alt="instagram-logo"></a>
+          </div>
+        </div>
+        <div class="detail-box detail-date">
+          <div class="detail-heading">DATE:</div><br>
+          Private View: 14 June <br>
+          <span class="view-date">15-18 June</span>
+        </div>
+        <div class="detail-box detail-location">
+          <div class="detail-heading">LOCATION:</div><br>
+          The Old Truman Brewery,<br> 91 Brick Lane,<br>London<br> E1 6QL
+          <div class="mapWrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6949.281830742295!2d-0.07770288853108193!3d51.52017290377254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb681c09d1b%3A0xffb3966176941f91!2sThe+Old+Truman+Brewery!5e0!3m2!1sen!2suk!4v1522942897063" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="detail-coder">
+          Coded by <a target="_blank" class="coders" href="https://megancashmoredesign.com/">Megan Cashmore</a>
+          <a target="_blank" class="coders" href="https://leedoughty.com">Lee Doughty</a>
+          <a target="_blank" class="coders" href="https://brightonhaveyouseenthis.com">Felix Kwong</a>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="buttons">
+        <div id="about-scrollbu" class="scroll-to-bu" onclick="scrollToAboutFunction()">AB[UT</div>
+        <!-- <div id="donate-scrollbu" class="scroll-to-bu" onclick="scrollToDonateFunction()">D`NATE</div> -->
+        <div id="work-scrollbu" class="scroll-to-bu" onclick="scrollToWorkFunction()">W_RK</div>
+        <div id="info-scrollbu" class="scroll-to-bu" onclick="scrollToInfoFunction()">INF|</div>
+      </div>
+    </div>
     <div id="htmlContainer"></div>
-    <a class = "link-centered" href ="work.html">WORK</a>
   </body>
 </html>

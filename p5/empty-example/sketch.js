@@ -14,7 +14,6 @@ function setup() {
 	htmlCanvas = createCanvas(windowWidth, windowHeight);
 	//load brush gif using p5.gif.js library
 	brush = loadGif('../../materials/brush.gif');
-	console.log(brush);
 	// find location
 	find = 1;
 	// make canvas' parent link to container in the html
@@ -42,10 +41,12 @@ function mouseMoved() {
 			blendMode(BURN);
 			// display brush as mouseX and mouseY coordinates, map this to mouseX and mouseY
 			image(brush, mouseX, mouseY, map(mouseX, mouseY, width, 0, 0));
-	} else if (find % 2 == 1) {
+		} else if (find % 2 === 1) {
 			blendMode(BURN);
-			image(brush, mouseX, mouseY, map(mouseX, mouseY, width, 50, 50), map(mouseX, mouseY, width, 50, 50));
-			image(brush, mouseX, mouseY, map(mouseX, mouseY, width, 50, 50), map(mouseX, mouseY, width, 50, 50));
+			// scale to actual size
+			scale(1);
+			// add brush (copy/paste this code for darker brush)
+			image(brush, mouseX, mouseY, map(mouseX, mouseY, width, 50, 50), map(mouseX, mouseY, width, 50, 50))*2;
 		}
 	}
 }
