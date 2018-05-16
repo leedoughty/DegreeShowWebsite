@@ -1,3 +1,36 @@
+var oosize;
+var oooptions;
+var imageTotal;
+var imageIndex = 0;
+
+function init() {
+  oosize = document.getElementById("oosize");
+  oooptions = document.getElementsByClassName("oooption");
+  imageTotal = oooptions.length;
+
+  var animate = function() {
+    oosize.classList.add("hidden");
+    for (var i = 0; i < imageTotal; i++) {
+      oooptions[i].classList.add("hidden");
+    }
+
+    imageIndex++;
+    if (imageIndex > imageTotal) {
+      imageIndex = 0;
+    }
+    if (imageIndex === 0) {
+      oosize.classList.toggle("hidden");
+    } else {
+      // frame 1 - 4 is the images, -1 to start the array at zero
+      oooptions[imageIndex - 1].classList.toggle("hidden");
+    }
+  };
+
+  animate();
+
+  setInterval(animate, 2000);
+}
+
 // (function() {
 //   var parallax = document.querySelectorAll("screenprint2"),
 //     speed = 0.5;
@@ -11,30 +44,9 @@
 //     });
 //   };
 // })();
-
-var ootext;
-var oochange;
-
-function init() {
-  ootext = document.getElementsByClassName("brand");
-  oochange = document.getElementsByClassName("ootext");
-  imageTotal = oochange.length;
-
-  setInterval(function() {
-    ootext.classList.add("hidden");
-    for (var i = 0; i < imageTotal; i++) {
-      oochange[i].classList.add("hidden");
-    }
-
-    imageIndex++;
-    if (imageIndex > imageTotal) {
-      imageIndex = 0;
-    }
-    if (imageIndex === 0) {
-      ootext.classList.toggle("hidden");
-    } else {
-      // frame 1 - 4 is the images, -1 to start the array at zero
-      ooimages[imageIndex - 1].classList.toggle("hidden");
-    }
-  }, 1000);
-}
+//
+//
+// brand = document.getElementsByClassName("brand");
+// txt = document.createTextNode("IN CAHAATS");
+// brand.appendChild(txt);
+// console.log("yooo");
