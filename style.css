@@ -22,6 +22,10 @@
   font-family: "futura-bold";
   src: url("FuturaStd-Bold.otf");
 }
+@font-face {
+  font-family: "DIN-regular";
+  src: url("DINPro-Regular.otf");
+}
 html,
 body {
   min-height: 100%;
@@ -129,7 +133,7 @@ a.googlemap:hover {
 }
 
 .ooanimation {
-  transition: opacity 1s ease-in-out;
+  /* transition: opacity 1s ease-in-out; */
   /* transition-delay: 1s; */
 }
 
@@ -151,26 +155,26 @@ a.googlemap:hover {
 }
 
 .screenprint2 {
-  width: 35%;
+  width: 16%;
   height: auto;
   z-index: 20;
   position: absolute;
   /* bottom: 10px; */
   top: -200px;
-  right: -200px;
+  right: -1px;
   /* opacity: 0.5; */
   /* background-blend-mode: multiply; */
   mix-blend-mode: multiply;
 }
 
 .screenprint3 {
-  width: 30%;
+  width: 25%;
   height: auto;
   z-index: 20;
   position: absolute;
   /* bottom: 10px; */
-  top: 200px;
-  right: -20px;
+  top: 340px;
+  right: 0px;
   /* opacity: 0.5; */
   /* background-blend-mode: multiply; */
   mix-blend-mode: multiply;
@@ -216,13 +220,13 @@ a.googlemap:hover {
 }
 
 .screenprint7 {
-  width: 25%;
+  width: 21.9%;
   height: auto;
   z-index: 20;
   position: absolute;
   /* bottom: 10px; */
-  top: 1200px;
-  right: -30px;
+  top: 1210px;
+  right: -1px;
   /* opacity: 0.5; */
   /* background-blend-mode: multiply; */
   mix-blend-mode: multiply;
@@ -281,9 +285,9 @@ a.googlemap:hover {
   padding-bottom: 3em;
   margin: 0 auto;
   font-size: 4vw;
-  font-family: "futura-med", sans-serif;
+  font-family: "DIN-regular", sans-serif;
   text-transform: none;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 /* .brand-in-text {
   font-family: "cahoots-type", "Futura", sans-serif;
@@ -324,10 +328,12 @@ a.googlemap:hover {
 }
 .promote-lk {
   padding-top: 4em;
+  width: 100%;
 }
 .vimeo-lk {
-  position: relative;
-  left: 45%;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 a.vimeo-lk:visited,
 a.vimeo-lk:link {
@@ -445,7 +451,9 @@ a.vimeo-lk:active {
   height: 100%;
   width: 100%;
   padding-bottom: 4em;
-  font-family: "futura-book", sans-serif;
+  font-size: 2.2vh;
+  font-family: "DIN-regular", sans-serif;
+  line-height: 1.15;
 }
 .detail-heading {
   font-weight: 900;
@@ -500,7 +508,7 @@ a.mail:active {
   bottom: 2%;
   text-align: center;
   transform: translate(-4%, 0);
-  font-family: "futura-book", sans-serif;
+  font-family: "DIN-regular", sans-serif;
 }
 /* /FOOTERRRRR////////////////////////////////////////////////////////// */
 #footer {
@@ -509,7 +517,7 @@ a.mail:active {
   width: 100%;
   font-family: "cahoots-type", "Futura", sans-serif;
   font-size: 1em;
-  z-index: 5;
+  z-index: 50;
   background: #f1ebdd;
 }
 .buttons {
@@ -518,6 +526,11 @@ a.mail:active {
 .scroll-to-bu {
   display: inline-block;
   margin: 0.5em 6em;
+  cursor: pointer;
+}
+.scroll-to-bu:hover,
+.scroll-to-bu:active {
+  color: #d92a2f;
 }
 a.coders:visited,
 a.coders:link {
@@ -616,7 +629,6 @@ a.coders:active {
   }
   .vimeo-lk {
     font-size: 3vw;
-    left: 46%;
   }
   .grid-container {
     padding: 40px 180px 100px;
@@ -723,7 +735,6 @@ a.coders:active {
   }
   .vimeo-lk {
     font-size: 3vh;
-    left: 48%;
   }
   .text {
     font-size: 2vw;
