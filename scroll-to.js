@@ -10,6 +10,10 @@ function scrollToWorkFunction() {
     var element = document.getElementById("work");
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
 }
+function scrollToEventFunction() {
+    var element = document.getElementById("event");
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 function scrollToInfoFunction() {
     var element = document.getElementById("info");
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});

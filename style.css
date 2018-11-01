@@ -23,8 +23,8 @@
   src: url("FuturaStd-Bold.otf");
 }
 @font-face {
-  font-family: "DIN-regular";
-  src: url("DINPro-Regular.otf");
+  font-family: "DIN-NG";
+  src: url("DINNeuzeitGroteskStd-Light.otf");
 }
 html,
 body {
@@ -57,6 +57,8 @@ canvas {
   margin: 0;
   padding: 10px;
   z-index: 3;
+  font-size: 5vw;
+  text-align: center;
 }
 .top-co {
   width: 100%;
@@ -278,16 +280,16 @@ a.googlemap:hover {
   text-align: center;
 }
 .about-info {
-  max-width: 70%;
+  max-width: 80%;
   padding-top: 3em;
   padding-left: 1em;
   padding-right: 1em;
   padding-bottom: 3em;
   margin: 0 auto;
-  font-size: 4vw;
-  font-family: "DIN-regular", sans-serif;
+  font-size: 5vw;
+  font-family: "DIN-NG", sans-serif;
   text-transform: none;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 /* .brand-in-text {
   font-family: "cahoots-type", "Futura", sans-serif;
@@ -451,9 +453,8 @@ a.vimeo-lk:active {
   height: 100%;
   width: 100%;
   padding-bottom: 4em;
-  font-size: 2.2vh;
-  font-family: "DIN-regular", sans-serif;
-  line-height: 1.15;
+  font-family: "DIN-NG", sans-serif;
+  line-height: 1.3;
 }
 .detail-heading {
   font-weight: 900;
@@ -508,7 +509,7 @@ a.mail:active {
   bottom: 2%;
   text-align: center;
   transform: translate(-4%, 0);
-  font-family: "DIN-regular", sans-serif;
+  font-family: "DIN-NG", sans-serif;
 }
 /* /FOOTERRRRR////////////////////////////////////////////////////////// */
 #footer {
@@ -521,6 +522,7 @@ a.mail:active {
   background: #f1ebdd;
 }
 .buttons {
+  display: none;
   text-align: center;
 }
 .scroll-to-bu {
@@ -528,8 +530,7 @@ a.mail:active {
   margin: 0.5em 6em;
   cursor: pointer;
 }
-.scroll-to-bu:hover,
-.scroll-to-bu:active {
+.scroll-to-bu:hover, .scroll-to-bu:active {
   color: #d92a2f;
 }
 a.coders:visited,
@@ -559,6 +560,7 @@ a.coders:active {
   }
   .corner {
     position: absolute;
+    font-size: 2vw;
   }
   .corner.top {
     top: 0;
@@ -660,6 +662,9 @@ a.coders:active {
     bottom: 5%;
     background: none;
   }
+  .buttons {
+    display: block;
+  }
   .scroll-to-bu {
     padding: 0.2em;
     margin: 0.5em 3.5em;
@@ -706,7 +711,7 @@ a.coders:active {
   }
   .about-info {
     max-width: none;
-    width: 520px;
+    width: 640px;
     font-size: 18px;
   }
   /* .brand-in-text {
@@ -784,11 +789,11 @@ a.coders:active {
     width: 35vw;
     height: 30vw;
   }
-  .detail-coder {
-    font-size: 2vh;
-  }
   .coders {
     margin: 0 0.25em;
+  }
+  .detail-coder {
+    font-size: 18px;
   }
   #footer {
     bottom: 2%;
@@ -797,7 +802,41 @@ a.coders:active {
     display: inline-block;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    margin-left: 8vw;
-    margin-right: 8vw;
+    margin-left: 5vw;
+    margin-right: 5.5vw;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .screenprint1 {
+    width: 30%;
+    top: 0px;
+  }
+  .screenprint2 {
+    width: 16%;
+    top: -200px;
+  }
+  .screenprint3 {
+    width: 25%;
+    top: 800px;
+  }
+  .screenprint4 {
+    width: 30%;
+    top: 1000px;
+  }
+  .screenprint5 {
+    width: 20%;
+    top: 1550px;
+  }
+  .screenprint6 {
+    width: 30%;
+    top: 1650px;
+  }
+  .screenprint7 {
+    width: 21.9%;
+    top: 2950px;
+  }
+  .screenprint8 {
+    width: 25%;
+    top: 2850px;
   }
 }

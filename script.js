@@ -28,7 +28,7 @@ function init() {
 
   animate();
 
-  setInterval(animate, 2000);
+  setInterval(animate, 1500);
 }
 
 // (function() {
