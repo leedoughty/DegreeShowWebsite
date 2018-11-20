@@ -1,30 +1,30 @@
 @font-face {
   font-family: "cahoots-type";
-  src: url("FINISHED CAHOOTS TYPE (INC SPACING).ttf") format("truetype");
+  src: url("/typefaces/FINISHED CAHOOTS TYPE (INC SPACING).ttf") format("truetype");
 }
 @font-face {
   font-family: "futura-light";
-  src: url("FuturaStd-Light.otf");
+  src: url("/typefaces/FuturaStd-Light.otf");
 }
 @font-face {
   font-family: "futura-med";
-  src: url("FuturaStd-Medium.otf");
+  src: url("/typefaces/FuturaStd-Medium.otf");
 }
 @font-face {
   font-family: "futura-book";
-  src: url("FuturaStd-Book.otf");
+  src: url("/typefaces/FuturaStd-Book.otf");
 }
 @font-face {
   font-family: "futura-heavy";
-  src: url("FuturaStd-Heavy.otf");
+  src: url("/typefaces/FuturaStd-Heavy.otf");
 }
 @font-face {
   font-family: "futura-bold";
-  src: url("FuturaStd-Bold.otf");
+  src: url("/typefaces/FuturaStd-Bold.otf");
 }
 @font-face {
   font-family: "DIN-NG";
-  src: url("DINNeuzeitGroteskStd-Light.otf");
+  src: url("/typefaces/DINNeuzeitGroteskStd-Light.otf");
 }
 html,
 body {
@@ -143,6 +143,10 @@ a.googlemap:hover {
   width: 100%;
   /* height: 100%; */
 }
+
+/*
+FRONT-PAGE SCREENPRINT
+*/
 
 .screenprint1 {
   width: 30%;
@@ -511,7 +515,7 @@ a.mail:active {
   transform: translate(-4%, 0);
   font-family: "DIN-NG", sans-serif;
 }
-/* /FOOTERRRRR////////////////////////////////////////////////////////// */
+/* /FOOTER////////////////////////////////////////////////////////// */
 #footer {
   position: fixed;
   bottom: 0%;
@@ -603,9 +607,6 @@ a.coders:active {
     max-width: 55%;
     font-size: 2vw;
   }
-  /* .brand-in-text {
-    font-size: 2.5vw;
-  } */
   .phone-text {
     display: none;
   }
